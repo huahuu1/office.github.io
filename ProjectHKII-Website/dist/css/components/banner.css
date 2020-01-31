@@ -1,0 +1,57 @@
+.banner {
+  z-index: 1;
+  height: 60rem;
+  margin-bottom: 2rem; }
+  .banner .carousel-inner img {
+    width: 114% !important;
+    height: auto;
+    opacity: .9;
+    transform: translateX(-4.5%);
+    -webkit-transform: translateX(-4.5%);
+    -moz-transform: translateX(-4.5%);
+    -ms-transform: translateX(-4.5%);
+    -o-transform: translateX(-4.5%);
+    filter: grayscale(100%); }
+  .banner .overlay {
+    background-color: rgba(190, 190, 190, 0.2);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: -1px;
+    right: -1px;
+    transition: transform .3s, opacity .6s;
+    pointer-events: none; }
+  .banner .banner-inner:hover .prev-next-button {
+    color: #ff0000;
+    opacity: 1; }
+  .banner .banner-inner:hover .carousel-control-prev {
+    transform: translateX(-20%);
+    -webkit-transform: translateX(-20%);
+    -moz-transform: translateX(-20%);
+    -ms-transform: translateX(-20%);
+    -o-transform: translateX(-20%); }
+  .banner .banner-inner:hover .carousel-control-next {
+    transform: translateX(20%);
+    -webkit-transform: translateX(20%);
+    -moz-transform: translateX(20%);
+    -ms-transform: translateX(20%);
+    -o-transform: translateX(20%); }
+  .banner .banner-inner .prev-next-button {
+    position: absolute;
+    width: 4rem;
+    top: 30%;
+    vertical-align: middle;
+    color: #fff;
+    opacity: 0;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease; }
+  .banner .banner-inner .control-slider .icon-slider {
+    font-size: 2.5rem; }
+  .banner .banner-inner .control-slider .carousel-control-prev {
+    left: 3%; }
+  .banner .banner-inner .control-slider .carousel-control-next {
+    right: 3%; }
