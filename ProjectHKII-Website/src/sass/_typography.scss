@@ -18,9 +18,21 @@ body, td, th, input, button{
     color: #777;
 }
 
+.navbar {
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.nav-center {
+    justify-content: center;
+}
+
 .nav > li > a {
     font-family: "Kanit", sans-serif;
     color: #555;
+    list-style: none;
 }
 
 .fill {
@@ -32,4 +44,9 @@ body, td, th, input, button{
     height: 100%;
     padding: 0 !important;
     margin: 0 !important;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
 }

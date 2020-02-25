@@ -7,55 +7,176 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,500,700&amp;display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="../../../dist/css/styles.css"/>
   </head>
   <body>
-    <section class="menu-nav">
-      <div class="container">
-        <div class="top-navbar flex-row">
-          <div class="logo"><a class="nav-brand" href="#" alt="logo"><img src="../../assets/images/logo-officemona.png" alt="logo"/></a></div>
-          <div class="search-form-wrapper">
-            <div class="search-form">
-              <form action="" method="get">
-                <div class="nav-search flex-row">
-                  <div class="flex-col flex-grow">
-                    <input class="search-field mb-0" type="search" placeholder="Tìm nhanh sản phẩm ..."/>
+    <div class="container-fluid">
+      <section class="menu-nav">
+        <div class="container">
+          <div class="top-navbar flex-row">
+            <div class="logo"><a class="nav-brand" href="#" alt="logo"><img src="../../assets/images/logo-officemona.png" alt="logo"/></a></div>
+            <div class="search-form-wrapper">
+              <div class="search-form">
+                <form action="" method="get">
+                  <div class="nav-search flex-row">
+                    <div class="flex-col flex-grow">
+                      <input class="search-field mb-0" type="search" placeholder="Tìm nhanh sản phẩm ..."/>
+                    </div>
+                    <div class="flex-col">
+                      <button class="search-submit mb-0 btn" type="submit"><i class="icon-search fas fa-search"></i></button>
+                    </div>
                   </div>
-                  <div class="flex-col">
-                    <button class="search-submit mb-0 btn" type="submit"><i class="icon-search fas fa-search"></i></button>
-                  </div>
-                </div>
-              </form>
+                </form>
+              </div>
+            </div>
+            <div class="account justify-content-end">
+              <ul class="nav">
+                <li class="account-item"><a class="nav-top-link nav-top-not-logged-in"><span>đăng nhập</span></a></li>
+                <li class="header-divider"></li>
+                <li class="cart-item"><a><span class="header-cart-title">giỏ hàng&nbsp</span><span class="cart-price"><span class="amount">/ 0&nbsp<span class="symbol">đ</span><i class="fas fa-shopping-basket icon-basket"></i></span></span></a></li>
+              </ul>
             </div>
           </div>
-          <div class="account justify-content-end">
+          <div class="bot-navbar flex-row">
             <ul class="nav">
-              <li class="account-item"><a class="nav-top-link nav-top-not-logged-in"><span>đăng nhập</span></a></li>
-              <li class="header-divider"></li>
-              <li class="cart-item"><a><span class="header-cart-title">giỏ hàng&nbsp</span><span class="cart-price"><span class="amount">/ 0&nbsp<span class="symbol">đ</span><i class="fas fa-shopping-basket icon-basket"></i></span></span></a></li>
+              <li class="hover-nav"><a href="#"><i class="fas fa-star"></i><span>giúp bạn chọn</span></a></li>
+              <li class="hover-nav"><a href="#"><span>dụng cụ văn phòng</span><i class="fas fa-chevron-down arrow-down"></i></a>
+                <ul class="nav-dropdown">
+                  <li class="nav-hover-dropdown"><a href="#">Bấm kim</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Bấm lỗ</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Dao kéo</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Kim bấm</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Kẹp sách - Gáy sách</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Băng keo - Cắt keo</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Keo dán</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Thước - Compa</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Dây buộc</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Đóng dấu - Tampon</a></li>
+                </ul>
+              </li>
+              <li class="hover-nav"><a href="#"><span>giấy</span><i class="fas fa-chevron-down arrow-down"></i></a>
+                <ul class="nav-dropdown">
+                  <li class="nav-hover-dropdown"><a href="#">Bấm kim</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Bấm lỗ</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Dao kéo</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Kim bấm</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Kẹp sách - Gáy sách</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Băng keo - Cắt keo</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Keo dán</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Thước - Compa</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Dây buộc</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Đóng dấu - Tampon</a></li>
+                </ul>
+              </li>
+              <li class="hover-nav"><a href="#"><span>bìa hồ sơ</span><i class="fas fa-chevron-down arrow-down"></i></a>
+                <ul class="nav-dropdown">
+                  <li class="nav-hover-dropdown"><a href="#">Bấm kim</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Bấm lỗ</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Dao kéo</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Kim bấm</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Kẹp sách - Gáy sách</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Băng keo - Cắt keo</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Keo dán</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Thước - Compa</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Dây buộc</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Đóng dấu - Tampon</a></li>
+                </ul>
+              </li>
+              <li class="hover-nav"><a href="#"><span>bút viết</span><i class="fas fa-chevron-down arrow-down"></i></a>
+                <ul class="nav-dropdown">
+                  <li class="nav-hover-dropdown"><a href="#">Bấm kim</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Bấm lỗ</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Dao kéo</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Kim bấm</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Kẹp sách - Gáy sách</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Băng keo - Cắt keo</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Keo dán</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Thước - Compa</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Dây buộc</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Đóng dấu - Tampon</a></li>
+                </ul>
+              </li>
+              <li class="hover-nav"><a href="#"><span>tập sổ</span><i class="fas fa-chevron-down arrow-down"></i></a>
+                <ul class="nav-dropdown">
+                  <li class="nav-hover-dropdown"><a href="#">Bấm kim</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Bấm lỗ</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Dao kéo</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Kim bấm</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Kẹp sách - Gáy sách</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Băng keo - Cắt keo</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Keo dán</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Thước - Compa</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Dây buộc</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Đóng dấu - Tampon</a></li>
+                </ul>
+              </li>
+              <li class="hover-nav"><a href="#"><span>lưu trữ</span><i class="fas fa-chevron-down arrow-down"></i></a>
+                <ul class="nav-dropdown">
+                  <li class="nav-hover-dropdown"><a href="#">Bấm kim</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Bấm lỗ</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Dao kéo</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Kim bấm</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Kẹp sách - Gáy sách</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Băng keo - Cắt keo</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Keo dán</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Thước - Compa</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Dây buộc</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Đóng dấu - Tampon</a></li>
+                </ul>
+              </li>
+              <li class="hover-nav"><a href="#"><span>thiết bị</span><i class="fas fa-chevron-down arrow-down"></i></a>
+                <ul class="nav-dropdown">
+                  <li class="nav-hover-dropdown"><a href="#">Bấm kim</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Bấm lỗ</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Dao kéo</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Kim bấm</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Kẹp sách - Gáy sách</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Băng keo - Cắt keo</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Keo dán</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Thước - Compa</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Dây buộc</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Đóng dấu - Tampon</a></li>
+                </ul>
+              </li>
+              <li class="hover-nav"><a href="#"><span>tiện ích</span><i class="fas fa-chevron-down arrow-down"></i></a>
+                <ul class="nav-dropdown">
+                  <li class="nav-hover-dropdown"><a href="#">Bấm kim</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Bấm lỗ</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Dao kéo</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Kim bấm</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Kẹp sách - Gáy sách</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Băng keo - Cắt keo</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Keo dán</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Thước - Compa</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Dây buộc</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Đóng dấu - Tampon</a></li>
+                </ul>
+              </li>
+              <li class="hover-nav"><a href="#"><span>mực - ruban</span><i class="fas fa-chevron-down arrow-down"></i></a>
+                <ul class="nav-dropdown">
+                  <li class="nav-hover-dropdown"><a href="#">Bấm kim</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Bấm lỗ</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Dao kéo</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Kim bấm</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Kẹp sách - Gáy sách</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Băng keo - Cắt keo</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Keo dán</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Thước - Compa</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Dây buộc</a></li>
+                  <li class="nav-hover-dropdown"><a href="#">Đóng dấu - Tampon</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
-        <div class="bot-navbar flex-row">
-          <ul class="nav">
-            <li class="hover-nav"><a><i class="fas fa-star"></i><span>giúp bạn chọn</span></a></li>
-            <li class="hover-nav"><a><span>dụng cụ văn phòng</span><i class="fas fa-chevron-down arrow-down"></i></a></li>
-            <li class="hover-nav"><a><span>giấy</span><i class="fas fa-chevron-down arrow-down"></i></a></li>
-            <li class="hover-nav"><a><span>bìa hồ sơ</span><i class="fas fa-chevron-down arrow-down"></i></a></li>
-            <li class="hover-nav"><a><span>bút viết</span><i class="fas fa-chevron-down arrow-down"></i></a></li>
-            <li class="hover-nav"><a><span>tập sổ</span><i class="fas fa-chevron-down arrow-down"></i></a></li>
-            <li class="hover-nav"><a><span>lưu trữ</span><i class="fas fa-chevron-down arrow-down"></i></a></li>
-            <li class="hover-nav"><a><span>thiết bị</span><i class="fas fa-chevron-down arrow-down"></i></a></li>
-            <li class="hover-nav"><a><span>tiện ích</span><i class="fas fa-chevron-down arrow-down"></i></a></li>
-            <li class="hover-nav"><a><span>mực - ruban</span><i class="fas fa-chevron-down arrow-down"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script type="text/javascript" src="../../js/navigation.js"></script>
+    <script type="text/javascript" src="../../js/product.js"></script>
     <script type="text/javascript" src="../../js/index.js"></script>
   </body>
 </html>

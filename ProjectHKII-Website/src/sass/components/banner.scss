@@ -1,7 +1,7 @@
 .banner {
     z-index: 1;
     height: 60rem;
-    margin-bottom: 2rem;
+    // margin-bottom: 2rem;
     .carousel-inner {
         img {
             width: 114%!important;
@@ -27,47 +27,65 @@
         pointer-events: none;
     }
     .banner-inner {
-        &:hover .prev-next-button {
-            color: #ff0000;
+        &:hover .control-slider .prev-next-button {
             opacity: 1;
+
+
         }
-        &:hover .carousel-control-prev {
+        &:hover .control-slider .carousel-control-prev {
             transform: translateX(-20%);
             -webkit-transform: translateX(-20%);
             -moz-transform: translateX(-20%);
             -ms-transform: translateX(-20%);
             -o-transform: translateX(-20%);
 }
-        &:hover .carousel-control-next{
+        &:hover .control-slider .carousel-control-next{
             transform: translateX(20%);
             -webkit-transform: translateX(20%);
             -moz-transform: translateX(20%);
             -ms-transform: translateX(20%);
             -o-transform: translateX(20%);
         }
-        .prev-next-button {
-            position: absolute;
-            width: 4rem;
-            top: 30%;
-            vertical-align: middle;
-            color: #fff;
-            opacity: 0;
-            transition: all .3s ease;
-            -webkit-transition: all .3s ease;
-            -moz-transition: all .3s ease;
-            -ms-transition: all .3s ease;
-            -o-transition: all .3s ease;
-}
+
 
         .control-slider {
+            position: relative;
+            top: -125%;
+            max-height: 100%;
+            height: 100%;
+            .prev-next-button {
+                &:hover {
+                    span {
+                        color: #ff0000;
+                    }
+                }
+                position: absolute;
+                width: 4rem;
+                top: 30%;
+                vertical-align: middle;
+                opacity: 0;
+                transition: all .3s ease;
+                -webkit-transition: all .3s ease;
+                -moz-transition: all .3s ease;
+                -ms-transition: all .3s ease;
+                -o-transition: all .3s ease;
+                span {
+                    transition: all .3s ease;
+                    -webkit-transition: all .3s ease;
+                    -moz-transition: all .3s ease;
+                    -ms-transition: all .3s ease;
+                    -o-transition: all .3s ease;
+                    color: #fff;
+                }
+            }
             .icon-slider {
-                font-size: 2.5rem;
+                font-size: 2.2rem;
             }
             .carousel-control-prev {
-                left: 3%;
+                left: 2%;
             }
             .carousel-control-next {
-                right: 3%;
+                right: 2%;
 
             }
         }

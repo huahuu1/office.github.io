@@ -1,0 +1,91 @@
+section.product-content {
+    .tabbed-product {
+        overflow: hidden;
+        padding-top: 6rem;
+        .navbar {
+            li.active {
+                a {
+                    color: #ff0000;
+                    &:before {
+                        opacity: 1;
+                    }
+
+                }
+            }
+            li {
+                position: relative;
+                padding: 0 1.5rem;
+                &:hover {
+                    a {
+                        color: #ff0000;
+                        &:before {
+                            opacity: 1;
+                        }
+
+                    }
+                }
+                a {
+                    padding: 1rem 0;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-family: "Roboto Slab", sans-serif;
+                    font-weight: 500;
+                    color: #000;
+                    transition: all .1s ease;
+                    -webkit-transition: all .1s ease;
+                    -moz-transition: all .1s ease;
+                    -ms-transition: all .1s ease;
+                    -o-transition: all .1s ease;
+                    &:before {
+                        position: absolute;
+                        top: -20px;
+                        content: "\f005";
+                        font-family: 'Font Awesome\ 5 Free';
+                        font-weight: 900;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        font-size: 16px;
+                        line-height: 1;
+                        color: currentColor;
+                        -webkit-transform: translateX(-50%);
+                        -moz-transform: translateX(-50%);
+                        -ms-transform: translateX(-50%);
+                        -o-transform: translateX(-50%);
+                        opacity: 0;
+                        transition: all .1s ease;
+                        -webkit-transition: all .1s ease;
+                        -moz-transition: all .1s ease;
+                        -ms-transition: all .1s ease;
+                        -o-transition: all .1s ease;
+                        pointer-events: none;
+                    }
+                }
+            }
+        }
+    }
+    .tab {
+        display: none;
+
+    }
+    .tab.active {
+        display: block;
+    }
+    .wrapper-product {
+        .tab-content {
+            animation: fadeEffect 1s;
+            -webkit-animation: fadeEffect 1s;
+            padding-top: 1.6rem;
+            .row {
+                .product-item {
+                    padding: 0 .98rem 1.96rem;
+                    width: 20%;
+                    .product-image {
+                        img {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
