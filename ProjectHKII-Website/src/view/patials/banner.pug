@@ -1,15 +1,23 @@
 section.banner
-    #carouselExampleControls.carousel.slide.relative.fill.banner-inner(data-ride='carousel')
-        .carousel-inner
-            .carousel-item.active
-                img.d-block.w-100(src='../../../dist/assets/images/banner-01.jpg' alt='banner1')
-            .carousel-item
-                img.d-block.w-100(src='../../../dist/assets/images/banner-02.jpg' alt='banner2')
-            .overlay
-        .control-slider
-            a.prev-next-button.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
-                span.fas.fa-chevron-left.icon-slider(aria-hidden='true')
-                span.sr-only Previous
-            a.prev-next-button.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
-                span.fas.fa-chevron-right.icon-slider(aria-hidden='true')
-                span.sr-only Next
+    //- #carouselExampleControls.carousel.slide.relative.fill.banner-inner(data-ride='carousel')
+    //-     .carousel-inner
+    //-         .carousel-item.active
+    //-             img.d-block.w-100(src='../../../dist/assets/images/banner-01.jpg' alt='banner1')
+    //-         .carousel-item
+    //-             img.d-block.w-100(src='../../../dist/assets/images/banner-02.jpg' alt='banner2')
+    //-         .overlay
+    //-     .control-slider
+    //-         a.prev-next-button.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
+    //-             span.fas.fa-chevron-left.icon-slider(aria-hidden='true')
+    //-             span.sr-only Previous
+    //-         a.prev-next-button.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
+    //-             span.fas.fa-chevron-right.icon-slider(aria-hidden='true')
+    //-             span.sr-only Next
+    .owl-carousel.owl-theme.owl-loaded
+        .owl-stage-outer
+            .owl-stage
+                .owl-item
+                    img.d-block.w-100(src='../../../dist/assets/images/banner-01.jpg' alt='banner1')
+                .owl-item
+                    img.d-block.w-100(src='../../../dist/assets/images/banner-02.jpg' alt='banner2')
+        
