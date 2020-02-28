@@ -1,6 +1,10 @@
 .menu-nav {
   z-index: 999;
-  position: relative; }
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0; }
   .menu-nav .container .top-navbar {
     border-bottom: 1px solid #ccc; }
     .menu-nav .container .top-navbar .logo {
