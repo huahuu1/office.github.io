@@ -1,51 +1,53 @@
-section.product-content .tabbed-product {
-  overflow: hidden;
-  padding-top: 6rem; }
-  section.product-content .tabbed-product .navbar li.active a {
-    color: #ff0000; }
-    section.product-content .tabbed-product .navbar li.active a:before {
-      opacity: 1; }
-  section.product-content .tabbed-product .navbar li {
-    position: relative;
-    padding: 0 1.5rem; }
-    section.product-content .tabbed-product .navbar li:hover a {
+section.product-content .tabs {
+  margin-top: 4rem; }
+  section.product-content .tabs .tabbed-product {
+    overflow: hidden;
+    padding-top: 2rem; }
+    section.product-content .tabs .tabbed-product .navbar li.active a {
       color: #ff0000; }
-      section.product-content .tabbed-product .navbar li:hover a:before {
+      section.product-content .tabs .tabbed-product .navbar li.active a:before {
         opacity: 1; }
-    section.product-content .tabbed-product .navbar li a {
-      padding: 1rem 0;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-family: "Roboto Slab", sans-serif;
-      font-weight: 500;
-      color: #000;
-      transition: all .1s ease;
-      -webkit-transition: all .1s ease;
-      -moz-transition: all .1s ease;
-      -ms-transition: all .1s ease;
-      -o-transition: all .1s ease; }
-      section.product-content .tabbed-product .navbar li a:before {
-        position: absolute;
-        top: -20px;
-        content: "\f005";
-        font-family: 'Font Awesome\ 5 Free';
-        font-weight: 900;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 16px;
-        line-height: 1;
-        color: currentColor;
-        -webkit-transform: translateX(-50%);
-        -moz-transform: translateX(-50%);
-        -ms-transform: translateX(-50%);
-        -o-transform: translateX(-50%);
-        opacity: 0;
+    section.product-content .tabs .tabbed-product .navbar li {
+      position: relative;
+      padding: 0 1.5rem; }
+      section.product-content .tabs .tabbed-product .navbar li:hover a {
+        color: #ff0000; }
+        section.product-content .tabs .tabbed-product .navbar li:hover a:before {
+          opacity: 1; }
+      section.product-content .tabs .tabbed-product .navbar li a {
+        padding: 1rem 0;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: "Roboto Slab", sans-serif;
+        font-weight: 500;
+        color: #000;
         transition: all .1s ease;
         -webkit-transition: all .1s ease;
         -moz-transition: all .1s ease;
         -ms-transition: all .1s ease;
-        -o-transition: all .1s ease;
-        pointer-events: none; }
+        -o-transition: all .1s ease; }
+        section.product-content .tabs .tabbed-product .navbar li a:before {
+          position: absolute;
+          top: -20px;
+          content: "\f005";
+          font-family: 'Font Awesome\ 5 Free';
+          font-weight: 900;
+          left: 50%;
+          transform: translateX(-50%);
+          font-size: 16px;
+          line-height: 1;
+          color: currentColor;
+          -webkit-transform: translateX(-50%);
+          -moz-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+          -o-transform: translateX(-50%);
+          opacity: 0;
+          transition: all .1s ease;
+          -webkit-transition: all .1s ease;
+          -moz-transition: all .1s ease;
+          -ms-transition: all .1s ease;
+          -o-transition: all .1s ease;
+          pointer-events: none; }
 
 section.product-content .tab {
   display: none; }
@@ -62,3 +64,18 @@ section.product-content .wrapper-product .tab-content {
     width: 20%; }
     section.product-content .wrapper-product .tab-content .row .product-item .product-image img {
       max-width: 100%; }
+    section.product-content .wrapper-product .tab-content .row .product-item .product-text {
+      text-align: center; }
+      section.product-content .wrapper-product .tab-content .row .product-item .product-text .title-wrapper a {
+        font-size: 1.5rem;
+        color: #334862; }
+      section.product-content .wrapper-product .tab-content .row .product-item .product-text .price-wrapper .price {
+        white-space: nowrap;
+        color: #111;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 1; }
+        section.product-content .wrapper-product .tab-content .row .product-item .product-text .price-wrapper .price .woocommerce-price-currencySymbol {
+          font-size: 1.4rem;
+          text-decoration: underline;
+          font-weight: 700; }

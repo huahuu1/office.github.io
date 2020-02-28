@@ -97,7 +97,7 @@
                 -moz-transform: translateX(-20%);
                 -ms-transform: translateX(-20%);
                 -o-transform: translateX(-20%);
-            }    
+            }
             &:hover .owl-next {
                 transform: translateX(20%);
                 -webkit-transform: translateX(20%);
@@ -140,6 +140,6 @@
         //     transition: transform .3s, opacity .6s;
         //     pointer-events: none;
         // }
-        
+
     }
-}    
+}
