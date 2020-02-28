@@ -18,7 +18,9 @@ html(lang="en")
         link(rel="stylesheet", href="../../../dist/css/styles.css")
     body
         .container-fluid
-            include ../patials/navigation.pug
+            .wrapper-nav.position-relative
+                include ../patials/navigation.pug
+                include ../patials/banner.pug
             block main-content
             include ../patials/footer.pug
 
