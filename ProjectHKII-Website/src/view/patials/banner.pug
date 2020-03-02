@@ -13,11 +13,22 @@ section.banner
     //-         a.prev-next-button.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
     //-             span.fas.fa-chevron-right.icon-slider(aria-hidden='true')
     //-             span.sr-only Next
-    .owl-carousel.owl-theme.owl-loaded
-        .owl-stage-outer
-            .owl-stage
-                .owl-item
-                    img.d-block.w-100(src='../../../dist/assets/images/banner-01.jpg' alt='banner1')
-                .owl-item
-                    img.d-block.w-100(src='../../../dist/assets/images/banner-02.jpg' alt='banner2')
-        
+    .owl-carousel.owl-theme.banner-inner
+        .item
+            .owl-lazy(data-src='http://mauweb.monamedia.net/officexinh/wp-content/uploads/2018/06/banner-01.jpg')
+        .item
+            .owl-lazy(data-src='http://mauweb.monamedia.net/officexinh/wp-content/uploads/2018/06/banner-02.jpg')
+    //- .owl-carousel.owl-theme.banner-inner
+    //-     .owl-stage-outer
+    //-         .owl-stage
+    //-             .owl-item
+    //-                 .owl-lazy.fill(data-src='http://mauweb.monamedia.net/officexinh/wp-content/uploads/2018/06/banner-01.jpg')
+    //-             .owl-item
+    //-                 .owl-lazy.fill(data-src='http://mauweb.monamedia.net/officexinh/wp-content/uploads/2018/06/banner-02.jpg')
+    //-         .overlay
+            //- .overlay-2
+        //- .owl-nav
+        //-     button.owl-prev
+        //-         i.fa.fa-chevron-left
+        //-     button.owl-next
+        //-         i.fa.fa-chevron-right

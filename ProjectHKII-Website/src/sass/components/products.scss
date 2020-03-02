@@ -1,21 +1,11 @@
 section.product-content {
-    .tabbed-product {
-        overflow: hidden;
-        padding-top: 6rem;
-        .navbar {
-            li.active {
-                a {
-                    color: #ff0000;
-                    &:before {
-                        opacity: 1;
-                    }
-
-                }
-            }
-            li {
-                position: relative;
-                padding: 0 1.5rem;
-                &:hover {
+    .tabs {
+        margin-top: 4rem;
+        .tabbed-product {
+            overflow: hidden;
+            padding-top: 2rem;
+            .navbar {
+                li.active {
                     a {
                         color: #ff0000;
                         &:before {
@@ -24,40 +14,53 @@ section.product-content {
 
                     }
                 }
-                a {
-                    padding: 1rem 0;
-                    text-transform: uppercase;
-                    text-decoration: none;
-                    font-family: "Roboto Slab", sans-serif;
-                    font-weight: 500;
-                    color: #000;
-                    transition: all .1s ease;
-                    -webkit-transition: all .1s ease;
-                    -moz-transition: all .1s ease;
-                    -ms-transition: all .1s ease;
-                    -o-transition: all .1s ease;
-                    &:before {
-                        position: absolute;
-                        top: -20px;
-                        content: "\f005";
-                        font-family: 'Font Awesome\ 5 Free';
-                        font-weight: 900;
-                        left: 50%;
-                        transform: translateX(-50%);
-                        font-size: 16px;
-                        line-height: 1;
-                        color: currentColor;
-                        -webkit-transform: translateX(-50%);
-                        -moz-transform: translateX(-50%);
-                        -ms-transform: translateX(-50%);
-                        -o-transform: translateX(-50%);
-                        opacity: 0;
+                li {
+                    position: relative;
+                    padding: 0 1.5rem;
+                    &:hover {
+                        a {
+                            color: #ff0000;
+                            &:before {
+                                opacity: 1;
+                            }
+
+                        }
+                    }
+                    a {
+                        padding: 1rem 0;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        font-family: "Roboto Slab", sans-serif;
+                        font-weight: 500;
+                        color: #000;
                         transition: all .1s ease;
                         -webkit-transition: all .1s ease;
                         -moz-transition: all .1s ease;
                         -ms-transition: all .1s ease;
                         -o-transition: all .1s ease;
-                        pointer-events: none;
+                        &:before {
+                            position: absolute;
+                            top: -20px;
+                            content: "\f005";
+                            font-family: 'Font Awesome\ 5 Free';
+                            font-weight: 900;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            font-size: 16px;
+                            line-height: 1;
+                            color: currentColor;
+                            -webkit-transform: translateX(-50%);
+                            -moz-transform: translateX(-50%);
+                            -ms-transform: translateX(-50%);
+                            -o-transform: translateX(-50%);
+                            opacity: 0;
+                            transition: all .1s ease;
+                            -webkit-transition: all .1s ease;
+                            -moz-transition: all .1s ease;
+                            -ms-transition: all .1s ease;
+                            -o-transition: all .1s ease;
+                            pointer-events: none;
+                        }
                     }
                 }
             }
@@ -82,6 +85,29 @@ section.product-content {
                     .product-image {
                         img {
                             max-width: 100%;
+                        }
+                    }
+                    .product-text {
+                        text-align: center;
+                        .title-wrapper {
+                            a {
+                                font-size: 1.5rem;
+                                color: #334862;
+                            }
+                        }
+                        .price-wrapper {
+                            .price {
+                                white-space: nowrap;
+                                color: #111;
+                                font-weight: 500;
+                                font-size: 1.5rem;
+                                line-height: 1;
+                                .woocommerce-price-currencySymbol {
+                                    font-size: 1.4rem;
+                                    text-decoration: underline;
+                                    font-weight: 700;
+                                }
+                            }
                         }
                     }
                 }
