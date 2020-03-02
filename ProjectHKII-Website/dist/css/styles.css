@@ -278,6 +278,9 @@ section.product-content .wrapper-product .tab-content {
           text-decoration: underline;
           font-weight: 700; }
 
+.banner {
+  color: black; }
+
 .menu-nav {
   z-index: 999;
   position: absolute;
