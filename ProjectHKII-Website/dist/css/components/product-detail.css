@@ -43,8 +43,13 @@
       padding: auto 0; }
     .container .productMain .content .textTag p {
       padding: 1rem 0; }
-    .container .productMain .content .cartForm .quantityControl {
-      margin: auto; }
+    .container .productMain .content .cartForm {
+      font-size: 0; }
+      .container .productMain .content .cartForm .quantityControl .btnMinus, .container .productMain .content .cartForm .quantityControl .btnPlus {
+        width: 2.5rem;
+        height: 4rem; }
+      .container .productMain .content .cartForm .quantityControl .btn-success {
+        margin: auto 5rem; }
 
 .container .productDetail {
   padding: 4rem 0; }

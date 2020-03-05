@@ -58,8 +58,19 @@
                 }
             }
             .cartForm {
+                font-size: 0;
                 .quantityControl {
-                    margin: auto
+                    .btnMinus, .btnPlus {
+                        width: 2.5rem;
+                        height: 4rem
+                    }
+                    .txtQuantity {
+                        //border-left: none;
+                        //border-right: none;
+                    }
+                    .btn-success {
+                        margin: auto 5rem;
+                    }
                 }
             }
         }
