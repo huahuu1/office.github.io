@@ -111,9 +111,3 @@
     height: 75rem; }
     .owl-carousel .owl-stage .owl-lazy {
       height: 75rem; } }
-
-@media (min-width: 1200px) {
-  .owl-carousel {
-    height: 95rem; }
-    .owl-carousel .owl-stage .owl-lazy {
-      height: 95rem; } }
