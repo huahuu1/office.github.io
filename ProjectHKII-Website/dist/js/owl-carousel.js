@@ -13,6 +13,12 @@ $(document).ready(function () {
     responsive: {
       0: {
         items: 1
+      },
+      850: {
+        items: 3
+      },
+      1200: {
+        items: 5
       }
     }
   });

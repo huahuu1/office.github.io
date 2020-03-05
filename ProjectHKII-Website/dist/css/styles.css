@@ -278,6 +278,225 @@ section.product-content .wrapper-product .tab-content {
           text-decoration: underline;
           font-weight: 700; }
 
+.container .breadCrumb {
+  padding: 2rem 0;
+  text-transform: uppercase;
+  color: rgba(102, 102, 102, 0.7); }
+  .container .breadCrumb a {
+    cursor: pointer;
+    color: rgba(102, 102, 102, 0.7); }
+    .container .breadCrumb a:hover {
+      color: #222;
+      text-decoration: none; }
+  .container .breadCrumb .divider {
+    margin: auto 0.5rem; }
+
+.container .productMain {
+  padding: 1.5rem 0; }
+  .container .productMain .image {
+    overflow: hidden; }
+    .container .productMain .image img {
+      width: 100%;
+      transition: all 1s; }
+    .container .productMain .image:hover img {
+      transform: scale(1.5);
+      -webkit-transform: scale(1.5);
+      -moz-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      -o-transform: scale(1.5); }
+  .container .productMain .content {
+    width: 100%;
+    color: #1C1C1C;
+    padding: 1.5rem 4rem; }
+    .container .productMain .content .nameTag {
+      font-weight: bold;
+      font-size: 2.5rem; }
+    .container .productMain .content .divideTag {
+      margin: 2rem 0;
+      height: 2.5px;
+      display: block;
+      background-color: rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 40px; }
+    .container .productMain .content .priceTag {
+      font-size: 2.5rem;
+      padding: auto 0; }
+    .container .productMain .content .textTag p {
+      padding: 1rem 0; }
+    .container .productMain .content .cartForm .quantityControl {
+      margin: auto; }
+
+.container .productDetail {
+  padding: 4rem 0; }
+  .container .productDetail .nav-item::selection {
+    border-top: 2px solid #fa3264; }
+  .container .productDetail .tab-content {
+    border: 0.5px solid rgba(100, 100, 100, 0.25);
+    border-top: none; }
+    .container .productDetail .tab-content .description, .container .productDetail .tab-content .evaluation {
+      padding: 2.5rem 5rem; }
+      .container .productDetail .tab-content .description h1, .container .productDetail .tab-content .evaluation h1 {
+        color: #000;
+        padding: 1.5rem 0; }
+      .container .productDetail .tab-content .description .comment, .container .productDetail .tab-content .evaluation .comment {
+        padding: 2.5rem 2.5rem;
+        border: 0.25rem solid #cd3737; }
+        .container .productDetail .tab-content .description .comment textarea, .container .productDetail .tab-content .evaluation .comment textarea {
+          margin: 1.5rem 0; }
+
+.container .productOthers h1 {
+  color: #000;
+  padding: 1.5rem 0; }
+
+.col-md-3 {
+  display: inline-block;
+  margin-left: -4px; }
+  .col-md-3 img {
+    width: 100%;
+    height: auto; }
+
+/*
+body {
+    .carousel-indicators li {
+        background-color:red
+    }
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        background-color:red
+    }
+    .no-padding {
+        padding-left: 0;
+        padding-right: 0
+    }
+}*/
+@media (min-width: 768px) and (max-width: 991px) {
+  /*show 4th slide on md if col-md-4*/
+  .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%;
+    /*change this with javascript in the future*/
+    z-index: -1;
+    display: block;
+    visibility: visible; } }
+
+@media (min-width: 576px) and (max-width: 768px) {
+  /*show 3rd slide on sm if col-sm-6*/
+  .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -50%;
+    /*change this with javascript in the future*/
+    z-index: -1;
+    display: block;
+    visibility: visible; } }
+
+@media (min-width: 576px) {
+  .carousel-item {
+    margin-right: 0; }
+  /*show 2 items*/
+  .carousel-inner .active + .carousel-item {
+    display: block; }
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+    transition: none; }
+  .carousel-inner .carousel-item-next {
+    position: relative;
+    transform: translate3d(0, 0, 0); }
+  /*left or forward direction*/
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible; }
+  /*farthest right hidden item must be also positioned for animations*/
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible; }
+  /*right or previous direction*/
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible; } }
+
+/*MD*/
+@media (min-width: 768px) {
+  /*show 3rd of 3 item slide*/
+  .carousel-inner .active + .carousel-item + .carousel-item {
+    display: block; }
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+    transition: none; }
+  .carousel-inner .carousel-item-next {
+    position: relative;
+    transform: translate3d(0, 0, 0); }
+  /*left or forward direction*/
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible; }
+  /*right or previous direction*/
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible; } }
+
+/*LG*/
+@media (min-width: 991px) {
+  /*show 4th item*/
+  .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+    display: block; }
+  .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+    transition: none; }
+  /*show 5th slide on lg if col-lg-3*/
+  .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -25%;
+    /*change this with javascript in the future*/
+    z-index: -1;
+    display: block;
+    visibility: visible; }
+  /*left or forward direction*/
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible; }
+  /*right or previous direction //t - previous slide direction last item animation fix*/
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible; } }
+
+/*Carousel control*/
+.carousel a {
+  width: 4rem; }
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  display: none; }
+
+.carousel.slide:hover .carousel-control-prev-icon {
+  display: block;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E"); }
+
+.carousel.slide:hover .carousel-control-next-icon {
+  display: block;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E"); }
+
+.banner {
+  color: black; }
+
 .menu-nav {
   z-index: 999;
   position: absolute;
