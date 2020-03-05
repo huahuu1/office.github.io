@@ -68,28 +68,33 @@
     .productOthers
         .container-fluid
             h1 SẢN PHẨM TƯƠNG TỰ
-            .carousel.slide#productOthers(data-ride="carousel")
-                .carousel-inner.row.w-100.mx-auto(role="listbox")
-                    .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3.active
-                        img(src="../../../dist/assets/images/bam_lo_978-600x600.jpg" alt="#").img-fluid.mx-auto.d-block
-                    .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3
-                        img(src="../../../dist/assets/images/ban-cat-giay-a3-600x600.jpg" alt="#").img-fluid.mx-auto.d-block
-                    .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3
-                        img(src="../../../dist/assets/images/Deli-7510-600x600.jpg" alt="#").img-fluid.mx-auto.d-block
-                    .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3
-                        img(src="../../../dist/assets/images/DraftingCompass-600x600.jpg" alt="#").img-fluid.mx-auto.d-block
-                    .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3
-                        img(src="../../../dist/assets/images/kb-23-23-600x600.jpg" alt="#").img-fluid.mx-auto.d-block
-                    .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3
-                        img(src="../../../dist/assets/images/rope-600x600.jpg" alt="#").img-fluid.mx-auto.d-block
-                    .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3
-                        img(src="../../../dist/assets/images/YP003-600x600.jpg" alt="#").img-fluid.mx-auto.d-block
-                a(href="#productOthers" role="button" data-slide="prev" style="text-align: left").carousel-control-prev
-                    span(aria-hidden="true").carousel-control-prev-icon
-                    span.sr-only Previous
-                a(href="#productOthers" role="button" data-slide="next").carousel-control-next
-                    span(aria-hidden="true").carousel-control-next-icon
-                    span.sr-only Next
+            //- .carousel.slide#productOthers(data-ride="carousel")
+            //-     .carousel-inner.row.w-100.mx-auto(role="listbox")
+            //-         .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3.active
+            //-             img(src="../../../dist/assets/images/bam_lo_978-600x600.jpg" alt="#").img-fluid.mx-auto.d-block
+            //-         .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3
+            //-             img(src="../../../dist/assets/images/ban-cat-giay-a3-600x600.jpg" alt="#").img-fluid.mx-auto.d-block
+            //-         .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3
+            //-             img(src="../../../dist/assets/images/Deli-7510-600x600.jpg" alt="#").img-fluid.mx-auto.d-block
+            //-         .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3
+            //-             img(src="../../../dist/assets/images/DraftingCompass-600x600.jpg" alt="#").img-fluid.mx-auto.d-block
+            //-         .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3
+            //-             img(src="../../../dist/assets/images/kb-23-23-600x600.jpg" alt="#").img-fluid.mx-auto.d-block
+            //-         .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3
+            //-             img(src="../../../dist/assets/images/rope-600x600.jpg" alt="#").img-fluid.mx-auto.d-block
+            //-         .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3
+            //-             img(src="../../../dist/assets/images/YP003-600x600.jpg" alt="#").img-fluid.mx-auto.d-block
+            //-     a(href="#productOthers" role="button" data-slide="prev" style="text-align: left").carousel-control-prev
+            //-         span(aria-hidden="true").carousel-control-prev-icon
+            //-         span.sr-only Previous
+            //-     a(href="#productOthers" role="button" data-slide="next").carousel-control-next
+            //-         span(aria-hidden="true").carousel-control-next-icon
+            //-         span.sr-only Next
+            .owl-carousel.owl-theme
+                .item
+                    .owl-lazy(data-src='../../../dist/assets/images/Deli-7510-600x600.jpg')
+                .item
+                    .owl-lazy(data-src='../../../dist/assets/images/Deli-7510-600x600.jpg')
 
 
 
