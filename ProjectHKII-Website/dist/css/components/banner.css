@@ -101,13 +101,13 @@
       height: 35rem; } }
 
 @media (min-width: 550px) {
-  .owl-carousel {
+  .slider {
     height: 50rem; }
-    .owl-carousel .owl-stage .owl-lazy {
+    .slider .owl-stage .owl-lazy {
       height: 50rem; } }
 
 @media (min-width: 850px) {
-  .owl-carousel {
+  .slider {
     height: 75rem; }
-    .owl-carousel .owl-stage .owl-lazy {
+    .slider .owl-stage .owl-lazy {
       height: 75rem; } }

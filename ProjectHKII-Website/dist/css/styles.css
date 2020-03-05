@@ -179,15 +179,15 @@ body, td, th, input, button {
       height: 35rem; } }
 
 @media (min-width: 550px) {
-  .owl-carousel {
+  .slider {
     height: 50rem; }
-    .owl-carousel .owl-stage .owl-lazy {
+    .slider .owl-stage .owl-lazy {
       height: 50rem; } }
 
 @media (min-width: 850px) {
-  .owl-carousel {
+  .slider {
     height: 75rem; }
-    .owl-carousel .owl-stage .owl-lazy {
+    .slider .owl-stage .owl-lazy {
       height: 75rem; } }
 
 section.product-content .tabs {
@@ -431,6 +431,7 @@ section.product-content .wrapper-product .tab-content {
             color: #fff;
             font-size: 1.5rem;
             font-weight: 500; }
+
 .container .breadCrumb {
   padding: 2rem 0;
   text-transform: uppercase;
@@ -646,9 +647,6 @@ body {
 .carousel.slide:hover .carousel-control-next-icon {
   display: block;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E"); }
-
-.banner {
-  color: black; }
 
 .menu-nav {
   z-index: 999;
