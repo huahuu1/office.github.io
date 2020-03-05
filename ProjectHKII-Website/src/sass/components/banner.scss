@@ -11,49 +11,15 @@
         .owl-loading {
             opacity: 1;
         }
-        .owl-carousel {
-            // position: relative;
-            // overflow: hidden;
+        .slider-main {
             .owl-stage-outer {
-                // position: absolute;
-                // width: 100%;
-                // height: 100%;
-                // overflow: hidden;
                 .owl-stage {
-                    // position: absolute;
-                    // left: 0;
-                    // padding-top: 550px;
                     .owl-item {
-                        // position: absolute;
-                        // top: 0;
-                        // bottom: 0;
-                        // height: 100%;
-                        // img {
-                        //     width: 100%!important;
-                        //     // max-height: 100vh;
-                        //     opacity: .9;
-                        //     filter: grayscale(100%);
-                        // }
                         .owl-lazy {
                             background-position: 40% 0%;
                             background-size: cover !important;
                             background-repeat: no-repeat !important;
                         }
-                        // .bg-img-01 {
-                        //     // box-sizing: border-box;
-                        //     background-image: url('http://mauweb.monamedia.net/officexinh/wp-content/uploads/2018/06/banner-01.jpg');
-                        //     // background-position: 40% 0%;
-                        //     // background-size: cover !important;
-                        //     background-repeat: no-repeat !important;
-                        //     width: 100%;
-                        // }
-                        // .bg-img-02 {
-                        //     // box-sizing: border-box;
-                        //     background-image: url('http://mauweb.monamedia.net/officexinh/wp-content/uploads/2018/06/banner-02.jpg');
-                            // // background-position: 40% 0%;
-                            // // background-size: cover !important;
-                            // background-repeat: no-repeat !important;
-                        // }
                     }
                 }
                 .overlay {
@@ -67,18 +33,6 @@
                     transition: transform .3s, opacity .6s;
                     pointer-events: none;
                 }
-                // .overlay-2 {
-                //     background-color: rgb(234, 234, 234);
-                //     position: absolute;
-                //     top: 0;
-                //     bottom: 0;
-                //     height: 100%;
-                //     left: -1px;
-                //     right: -1px;
-                //     transition: transform .3s, opacity .6s;
-                //     pointer-events: none;
-                //     z-index: -999;
-                // }
             }
             .owl-nav {
                 .owl-prev {
@@ -191,7 +145,7 @@
 }
 
 @media (max-width: 549px) {
-    .owl-carousel {
+    .slider-main {
         height: 35rem;
         .owl-stage {
             // padding-top: 35rem;
@@ -203,7 +157,7 @@
 }
 
 @media (min-width: 550px) {
-    .slider {
+    .slider-main {
         height: 50rem;
         .owl-stage {
             // padding-top: 50rem;
@@ -215,7 +169,7 @@
 }
 
 @media (min-width: 850px) {
-    .slider {
+    .slider-main {
         height: 75rem;
         .owl-stage {
             // padding-top: 75rem;
@@ -225,6 +179,7 @@
         }
     }
 }
+
 
 // @media (min-width: 1200px) {
 //     .owl-carousel {

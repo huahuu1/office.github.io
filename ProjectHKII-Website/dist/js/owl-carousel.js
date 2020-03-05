@@ -1,7 +1,7 @@
 "use strict";
 
 $(document).ready(function () {
-  $('.owl-carousel').owlCarousel({
+  $('.slider-main').owlCarousel({
     margin: 10,
     loop: true,
     responsiveClass: true,
@@ -16,11 +16,27 @@ $(document).ready(function () {
       }
     }
   });
-}); // $(document).ready(function(){
-//     $('.owl-carousel').slick({
-//         infinite: true,
-//         slidesToShow: 1,
-//         arrows: true,
-//         dots: false
-//     });
-// });
+  $('.slider-part').owlCarousel({
+    margin: 10,
+    loop: true,
+    responsiveClass: true,
+    dots: false,
+    autoplay: true,
+    nav: true,
+    navText: ["<i class='fa fa-chevron-left prev-next-button'></i>", "<i class='fa fa-chevron-right prev-next-button'></i>"],
+    responsive: {
+      0: {
+        items: 1
+      },
+      770: {
+        items: 3
+      },
+      850: {
+        items: 4
+      },
+      1200: {
+        items: 5
+      }
+    }
+  });
+});
