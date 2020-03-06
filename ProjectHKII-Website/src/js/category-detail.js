@@ -15,15 +15,28 @@
 // }
 // });
 
+// $(document).ready(function () {
+//     $('.button-collapse').click(function () {
+//         $('.item-content').toggleClass("uncollapse");
+//         if($('.item-content').hasClass('uncollapse')) {
+//             $('.item-content').removeClass("hide");
+//         } else {
+//             $('.item-content').addClass("hide");
+//         }
+//         $('.menu-arrow').toggleClass('fas fa-chevron-down');
+//         $('.menu-arrow').toggleClass('fas fa-chevron-up');
+//     });
+// });
+
 $(document).ready(function () {
     $('.button-collapse').click(function () {
-        $('.item-content').toggleClass("uncollapse");
-        if($('.item-content').hasClass('uncollapse')) {
-            $('.item-content').removeClass("hide");
+        $(this).toggleClass('fas fa-chevron-down');
+        $(this).toggleClass('fas fa-chevron-up');
+
+        if ($(this).parent().next().hasClass("d-none")) {
+            $(this).parent().next().removeClass("d-none");
         } else {
-            $('.item-content').addClass("hide");
+            $(this).parent().next().toggleClass("d-none");
         }
-        $('.menu-arrow').toggleClass('fas fa-chevron-down');
-        $('.menu-arrow').toggleClass('fas fa-chevron-up');  
     });
 });
