@@ -59,7 +59,6 @@
             }
             .cartForm {
                 .quantityControl {
-
                     .btnMinus, .btnPlus {
                         width: 2.5rem;
                         height: 4rem
@@ -104,7 +103,7 @@
                             font-size: 1.5rem
                         }
                         input.btn-info {
-                            height: 3.5rem;
+                            height: 3.5rem
                         }
                     }
                 }
@@ -136,7 +135,7 @@
                     left: -5%;
                     height: 100%;
                     width: 10rem;
-                    margin: 0;
+                    margin: 0
                 }
                 .owl-next {
                     position: absolute;
@@ -144,7 +143,7 @@
                     right: -5%;
                     height: 100%;
                     width: 10rem;
-                    margin: 0;
+                    margin: 0
                 }
                 button.owl-prev, button.owl-next {
                     background: transparent;
@@ -155,7 +154,7 @@
                     -ms-transition: all .3s ease;
                     -o-transition: all .3s ease;
                     &:hover {
-                        outline: none;
+                        outline: none
                     }
                     i {
                         transition: all .3s ease;
