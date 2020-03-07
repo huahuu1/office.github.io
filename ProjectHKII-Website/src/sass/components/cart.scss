@@ -1,0 +1,115 @@
+.cartDetails {
+    table {
+        thead {
+            th {
+                text-align: center
+            }
+
+        }
+        tbody {
+            .productRemove, .productThumbnail, .productName, .productPrice, .productQuantity, .productTotal {
+                padding: 1rem 1.5rem;
+            }
+            .productRemove {
+                a {
+                    width: 250rem;
+                    height: 250rem;
+                    background-color: #40a977;
+                    border-radius: 50%;
+                }
+            }
+            .quantityControl {
+                .btnMinus, .btnPlus {
+                    width: 2.5rem;
+                    height: 3.5rem
+                }
+                .txtQuantity {
+                    text-align: center;
+                    height: 3.5rem
+                }
+            }
+            .btnCartOut, .btnCartUpdate {
+                text-align: center;
+                border: 0.25rem solid rgb(150, 150, 150);
+                margin: 1.5rem 0.5rem;
+                padding: 0 0.5rem
+            }
+            .btnCartOut {
+                cursor: pointer;
+                a:hover {
+                    text-decoration: none
+                }
+                &:hover {
+                    background-color: rgb(225, 75, 75);
+                    border-color: rgb(225, 75, 75);
+                    a {
+                        color: white
+                    }
+                }
+            }
+            .btnCartUpdate {
+                a:hover {
+                    text-decoration: none
+                }
+                &:hover {
+                    background-color: rgba(75, 75, 75, 0.5);
+                    border-color: rgb(175, 175, 175);
+                    color: white
+                }
+            }
+            tr:first-child {
+                border-top: 0.3rem solid rgb(225, 225, 225);
+            }
+            tr:last-child {
+                border-top: 0.15rem solid rgb(225, 225, 225);
+            }
+        }
+    }
+}
+.cartContext {
+    border-left: 0.1rem solid rgb(225, 225, 225);
+    padding: 2rem 0 2rem 5rem;
+    table {
+        width: 100%;
+        tr {
+            border-bottom: 0.1rem solid rgb(225, 225, 225);
+
+            &:last-child {
+                border-bottom: 0.25rem solid rgb(225, 225, 225);
+            }
+            td {
+                padding: 1rem 0;
+            }
+        }
+    }
+    .cartPayment {
+        cursor: pointer;
+        text-align: center;
+        margin: 1.5rem 0;
+        background-color: rgba(25, 75, 175, 0.85);
+        color: white;
+        font-weight: 500;
+        transition: 1.5s;
+        a:hover {
+            color: white;
+            text-decoration: none
+        }
+        &:hover {
+            background-color: rgb(25, 75, 175);
+        }
+    }
+    form {
+        h3 {
+            border-bottom: 0.25rem solid rgb(225, 225, 225);
+            padding: 0.75rem 0;
+        }
+        input {
+            width: 100%;
+            margin: 0.75rem 0;
+
+        }
+        .btn-info {
+            font-weight: 500;
+        }
+    }
+}
