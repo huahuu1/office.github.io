@@ -17,7 +17,7 @@
 // });
 $(document).ready(function () {
   $('.button-collapse').click(function () {
-    $('.item-content').toggleClass("uncollapse");
+    $('.item-content').toggleClass('uncollapse');
 
     if ($('.item-content').hasClass('uncollapse')) {
       $('.item-content').removeClass("hide");
@@ -28,4 +28,14 @@ $(document).ready(function () {
     $('.menu-arrow').toggleClass('fas fa-chevron-down');
     $('.menu-arrow').toggleClass('fas fa-chevron-up');
   });
-});
+}); // $(document).ready(function () {
+//     $('.button-collapse').click(function () {
+//       $(this).toggleClass('fas fa-chevron-down');
+//       $(this).toggleClass('fas fa-chevron-up');
+//       if ($(this).parent().next().next().hasClass("sub-menu")) {
+//         $(this).parent().next().next().removeClass("sub-menu");
+//       } else {
+//         $(this).parent().next().next().toggleClass("sub-menu");
+//       }
+//     });
+//   });
