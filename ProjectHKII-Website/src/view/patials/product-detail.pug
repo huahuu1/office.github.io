@@ -9,22 +9,27 @@
         .image.col-sm-12.col-lg-6
             img(src="../../../dist/assets/images/bk-50la-600x600.jpg")
         .content.col-sm-12.col-lg-6
-            .nameTag Bấm Kim 50LA - 240 Tờ
+            .nameTag
+                h1 Bấm Kim 50LA - 240 Tờ
             .divideTag
             .priceTag.d-flex
                 p 350,000
                 span đ
             .textTag
-                p Bấm kim lớn KW Trio lớn 50LA (240 TỜ) CHÍNH HÃNG
-                p Văn phòng phẩm giá rẻ và tốt nhất tại HCM
-                p Chuyên cung cấp văn phòng phẩm giá sỉ, Đồ dùng văn phòng tại thành phố Hồ Chí Minh
-                p Chúng tôi chuyên cung cấp văn phòng phẩm, thiết bị văn phòng, thiết bị bảo hộ giá rẻ nhất tại Hồ Chí Minh, với phương châm giá rẻ nhất, dịch vụ tốt nhất, cung cấp nhanh tại các quận huyện trong thành phố Hồ Chí Minh
+                p
+                |- Bấm kim lớn KW Trio lớn 50LA (240 TỜ) CHÍNH HÃNG
+                br
+                |- Văn phòng phẩm giá rẻ và tốt nhất tại HCM
+                br
+                |- Chuyên cung cấp văn phòng phẩm giá sỉ, Đồ dùng văn phòng tại thành phố Hồ Chí Minh
+                br
+                |- Chúng tôi chuyên cung cấp văn phòng phẩm, thiết bị văn phòng, thiết bị bảo hộ giá rẻ nhất tại Hồ Chí Minh, với phương châm giá rẻ nhất, dịch vụ tốt nhất, cung cấp nhanh tại các quận huyện trong thành phố Hồ Chí Minh
             form(action="" method="").cartForm
                 .quantityControl.d-flex
                     input(type="button" id="btnMinus" name="btnMinus" value="-").btnMinus
                     input(type="text" id="txtQuantity" name="txtQuantity" size="3" value="0").txtQuantity
                     input(type="button" id="btnPlus" name="btnPlus" value="+").btnPlus
-                    input(type="submit" id="" name="" value="Thêm Vào Giỏ").btn-primary
+                    input.btn.btn-primary(type="submit" id="" name="" value="Thêm Vào Giỏ")
     .productDetail
         ul.nav.nav-tabs
             li.nav-item
@@ -34,18 +39,29 @@
         .tab-content
             .tab-pane.active#description
                 .description
-                    h1 Dập Kim 50LA, KW TRIO
+                    h3 Dập Kim 50LA, KW TRIO
                     p – KW trio là thương hiệu văn phòng phẩm uy tín tại Đài Loan trong lĩnh vực sản xuất các loại máy bấm kim, bấm lổ, kim bấm văn phòng
-                    p – Thân máy inox, dạng đẩy, bấm 240 tờ, chất lượng ưu việt
-                    p – Chức năng: lưu trữ tài liệu và chứng từ, đóng sách
-                    p – Đáp ứng tiêu chuẩn sức khỏe người dùng văn phòng
-                    p – NSX: Đài Loan
-                    p – Quy cách: 1 cái/hộp
-                    p – Tiết kiệm hơn khi chọn mua theo nhóm
-                    p – Chương trình khuyến mãi chỉ áp dụng cho các đơn hàng trực tuyến
-                    p – Vận chuyển miễn phí dựa trên giá trị đơn hàng
-                    p – Mẫu mã và thông tin sản phẩm có thể thay đổi theo chính sách nhà sản xuất
-                    p – Đơn vị tính: cái
+                        br
+                        | – Thân máy inox, dạng đẩy, bấm 240 tờ, chất lượng ưu việt
+                        br
+                        | – Chức năng: lưu trữ tài liệu và chứng từ, đóng sách
+                        br
+                        | – Đáp ứng tiêu chuẩn sức khỏe người dùng văn phòng
+                        br
+                        | – NSX: Đài Loan
+                        br
+                        | – Quy cách: 1 cái/hộp
+                        br
+                        | – Tiết kiệm hơn khi chọn mua theo nhóm
+                        br
+                        | – Chương trình khuyến mãi chỉ áp dụng cho các đơn hàng trực tuyến
+                        br
+                        | – Vận chuyển miễn phí dựa trên giá trị đơn hàng
+                        br
+                        | – Mẫu mã và thông tin sản phẩm có thể thay đổi theo chính sách nhà sản xuất
+                        br
+                        | – Đơn vị tính: cái
+                        br
             .tab-pane.fade#evaluation
                 .evaluation
                     h1 Đánh Giá
@@ -81,29 +97,7 @@
 
     .productOthers
         .container-fluid
-            h1 SẢN PHẨM TƯƠNG TỰ
-            //- .carousel.slide#productOthers(data-ride="carousel")
-            //-     .carousel-inner.row.w-100.mx-auto(role="listbox")
-            //-         .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3.active
-            //-             img(src="../../../dist/assets/images/bam_lo_978-600x600.jpg" alt="#").img-fluid.mx-auto.d-block
-            //-         .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3
-            //-             img(src="../../../dist/assets/images/ban-cat-giay-a3-600x600.jpg" alt="#").img-fluid.mx-auto.d-block
-            //-         .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3
-            //-             img(src="../../../dist/assets/images/Deli-7510-600x600.jpg" alt="#").img-fluid.mx-auto.d-block
-            //-         .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3
-            //-             img(src="../../../dist/assets/images/DraftingCompass-600x600.jpg" alt="#").img-fluid.mx-auto.d-block
-            //-         .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3
-            //-             img(src="../../../dist/assets/images/kb-23-23-600x600.jpg" alt="#").img-fluid.mx-auto.d-block
-            //-         .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3
-            //-             img(src="../../../dist/assets/images/rope-600x600.jpg" alt="#").img-fluid.mx-auto.d-block
-            //-         .carousel-item.col-12.col-sm-6.col-md-4.col-lg-3
-            //-             img(src="../../../dist/assets/images/YP003-600x600.jpg" alt="#").img-fluid.mx-auto.d-block
-            //-     a(href="#productOthers" role="button" data-slide="prev" style="text-align: left").carousel-control-prev
-            //-         span(aria-hidden="true").carousel-control-prev-icon
-            //-         span.sr-only Previous
-            //-     a(href="#productOthers" role="button" data-slide="next").carousel-control-next
-            //-         span(aria-hidden="true").carousel-control-next-icon
-            //-         span.sr-only Next
+            h3 SẢN PHẨM TƯƠNG TỰ
             .owl-carousel.owl-theme.slider-part.banner-inner
                 .item
                     .product-item

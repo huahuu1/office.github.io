@@ -8,11 +8,11 @@
             color: rgba(102, 102, 102, 0.7);
             &:hover {
                 color: #222;
-                text-decoration: none
+                text-decoration: none;
             }
         }
         .divider {
-            margin: auto 0.5rem
+            margin: auto 1rem;
         }
     }
 
@@ -22,23 +22,32 @@
             overflow: hidden;
             img {
                 width: 100%;
-                transition: all 1s
+                transition: all 1s ease;
+                -webkit-transition: all 1s ease;
+                -moz-transition: all 1s ease;
+                -ms-transition: all 1s ease;
+                -o-transition: all 1s ease;
             }
             &:hover img {
-                transform: scale(1.5);
-                -webkit-transform: scale(1.5);
-                -moz-transform: scale(1.5);
-                -ms-transform: scale(1.5);
-                -o-transform: scale(1.5)
-            }
+                transform: scale(1.2);
+                -webkit-transform: scale(1.2);
+                -moz-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                -o-transform: scale(1.2);
+}
         }
         .content {
             width: 100%;
             color: #1C1C1C;
             padding: 1.5rem 4rem;
             .nameTag {
-                font-weight: bold;
-                font-size: 2.5rem
+                h1 {
+                    color: #1c1c1c;
+                    font-weight: bold;
+                    font-size: 2.7rem;
+                    font-family: "Roboto Slab", sans-serif;
+                }
+
             }
             .divideTag {
                 margin: 2rem 0;
@@ -49,12 +58,25 @@
                 max-width: 40px
             }
             .priceTag {
-                font-size: 2.5rem;
-                padding: auto 0
+                // padding: auto 0;
+                align-items: center;
+                font-weight: 500;
+                color: #111;
+                p {
+                    margin: 0;
+                    margin-right: .5rem;
+                    font-size: 2.4rem;
+                }
+                span {
+                    font-size: 1.8rem;
+                    text-decoration: underline;
+                    font-weight: bold;
+                }
             }
             .textTag {
+                margin-bottom: 2rem;
                 p {
-                    padding: 1rem 0
+                    font-size: 1.6rem;
                 }
             }
             .cartForm {
@@ -71,7 +93,9 @@
                         margin: 0 5rem;
                         width: 15rem;
                         height: 4rem;
-                        border-radius: 0.5rem
+                        font-size: 1.6rem;
+                        text-transform: uppercase;
+                        font-weight: 500;
                     }
                 }
             }
@@ -79,17 +103,31 @@
     }
     .productDetail {
         padding: 4rem 0;
-        .nav-item::selection {
+        .nav-item .nav-link.active {
             border-top: 2px solid rgb(250, 50, 100)
+        }
+        .nav-item {
+            font-family: "Kanit", sans-serif;
+            font-size: 1.5rem;
+            color: #000;
+            font-weight: 500;
+            .nav-link {
+                padding: 1rem 1.5rem;
+            }
         }
         .tab-content {
             border: 0.5px solid rgba(100, 100, 100, 0.25);
             border-top: none;
             .description, .evaluation {
                 padding: 2.5rem 5rem;
-                h1 {
+                h3 {
                     color: #000;
-                    padding: 1.5rem 0
+                    padding: 1.5rem 0;
+                    font-size: 2rem;
+                    font-family: 'Roboto Slab', sans-serif;
+                }
+                p {
+                    font-size: 1.6rem;
                 }
                 .comment {
                     padding: 2.5rem 2.5rem;
@@ -111,11 +149,23 @@
         }
     }
     .productOthers {
-        h1 {
+        h3 {
             color: #000;
-            padding: 1.5rem 0
+            padding: 1.5rem 0;
+            font-family: "Roboto Slab", sans-serif;
+            margin: 0 6rem 1.5rem;
+            font-size: 2rem;
+            text-transform: uppercase;
         }
-        .slider-part {
+        .slider-supplier {
+            margin-top: 1rem;
+            img {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+        .slider-part,
+        .slider-supplier {
             margin-bottom: 2rem;
             .owl-stage-outer {
                 .owl-stage {
