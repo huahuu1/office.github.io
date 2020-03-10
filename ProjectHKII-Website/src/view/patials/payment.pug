@@ -29,27 +29,25 @@
                 input(type="submit" id="" name="" value="Apply").btnApply
     .payment
         .row
-            .col-7.col-sm-7.paymentInformation
+            .col-sm-12.col-md-12.col-lg-7.paymentInformation
                 h1 PAYMENT INFORMATION
                 .row
                     .form-group.col-6.col-sm-6.lastName
-                        label(for="") Last Name
+                        label(for="") Last Name*
                         input(type="text" id="" name="" maxlength="10").form-control
                     .form-group.col-6.col-sm-6.firstName
-                        label(for="") First Name
+                        label(for="") First Name*
                         input(type="text" id="" name="" maxlength="10").form-control
                 .form-group
                     label(for="") Company
                     input(type="text" id="" name="" maxlength="10").form-control
-                    label(for="") Country
-                    input(type="text" id="" name="" maxlength="10").form-control
-                    label(for="") Address
+                    label(for="") Address*
                     input(type="text" id="" name="" maxlength="10").form-control
                     label(for="") Zip Code
                     input(type="text" id="" name="" maxlength="10").form-control
-                    label(for="") Tel
+                    label(for="") Tel*
                     input(type="text" id="" name="" maxlength="10").form-control
-                    label(for="") Email
+                    label(for="") Email*
                     input(type="text" id="" name="" maxlength="10").form-control
                     .row
                         input(type="checkbox" id="" name="")
@@ -57,9 +55,9 @@
                     .row
                         input(type="checkbox" id="" name="")
                         p Ship to another address?
-                    p Note
+                    label(for="") Note
                     textarea(rows="10").form-control
-            .col-5.col-sm-5(style="padding-right: 0")
+            .col-sm-12.col-md-12.col-lg-5(style="padding-right: 0")
                 .paymentOrder
                     h2 YOUR ORDER
                     table
@@ -80,4 +78,4 @@
                             tr
                                 td(style="font-weight: 500") Total
                                 td(style="text-align: right; font-weight: 500") 5.250.000đ
-                    input(type="submit" id="" name="" value="Apply").btn.btn-secondary
+                    input(type="submit" id="" name="" value="Apply")
