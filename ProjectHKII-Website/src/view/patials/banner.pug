@@ -1,23 +1,28 @@
+//- banner
 section.banner
-    //- #carouselExampleControls.carousel.slide.relative.fill.banner-inner(data-ride='carousel')
-    //-     .carousel-inner
-    //-         .carousel-item.active
-    //-             img.d-block.w-100(src='../../../dist/assets/images/banner-01.jpg' alt='banner1')
-    //-         .carousel-item
-    //-             img.d-block.w-100(src='../../../dist/assets/images/banner-02.jpg' alt='banner2')
-    //-         .overlay
-    //-     .control-slider
-    //-         a.prev-next-button.carousel-control-prev(href='#carouselExampleControls' role='button' data-slide='prev')
-    //-             span.fas.fa-chevron-left.icon-slider(aria-hidden='true')
-    //-             span.sr-only Previous
-    //-         a.prev-next-button.carousel-control-next(href='#carouselExampleControls' role='button' data-slide='next')
-    //-             span.fas.fa-chevron-right.icon-slider(aria-hidden='true')
-    //-             span.sr-only Next
-    .owl-carousel.owl-theme.owl-loaded
-        .owl-stage-outer
-            .owl-stage
-                .owl-item
-                    img.d-block.w-100(src='../../../dist/assets/images/banner-01.jpg' alt='banner1')
-                .owl-item
-                    img.d-block.w-100(src='../../../dist/assets/images/banner-02.jpg' alt='banner2')
-        
+    .owl-carousel.owl-theme.banner-inner.slider-main
+        .item
+            .owl-lazy(data-src='http://mauweb.monamedia.net/officexinh/wp-content/uploads/2018/06/banner-01.jpg')
+            #text-box-1.text-box
+                .text
+                    .text-inner.text-left
+                        h3 Ưu đãi lên đến
+                        h2
+                            span(style='font-size: 160%;' data-text-color='primary')
+                            strong 10% off
+                        p Free Ship Dù Chỉ 1 Sản Phẩm (Nội Thành HCM), Đổi Trả Hàng Miễn Phí, Đa Dạng Sản Phẩm, Mua Gì Cũng Có
+                        a.button.white.is-outline.lowercase(href='http://mauweb.monamedia.net/officexinh/cua-hang/' target='_self')
+                            span Mua Ngay
+
+        .item
+            .owl-lazy(data-src='http://mauweb.monamedia.net/officexinh/wp-content/uploads/2018/06/banner-02.jpg')
+            #text-box-2.text-box
+                .text
+                    .text-inner.text-center
+                        h3 Tất cả những thứ bạn cần
+                        h2
+                            span(style='font-size: 120%;' data-text-color='primary')
+                            strong CHO VĂN PHÒNG
+                        p GIẢM GIÁ MẠNH CHO MỖI SẢN PHẨM
+                        a.button.white.is-outline.lowercase(href='http://mauweb.monamedia.net/officexinh/cua-hang/' target='_self')
+                            span Mua Ngay
