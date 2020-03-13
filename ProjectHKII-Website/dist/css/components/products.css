@@ -62,8 +62,7 @@ section.product-content .wrapper-product {
     -webkit-animation: fadeEffect 1s;
     padding-top: 1.6rem; }
     section.product-content .wrapper-product .tab-content .row .product-item {
-      padding: 0 .98rem 1.96rem;
-      width: 20%; }
+      padding: 0 .98rem 1.96rem; }
       section.product-content .wrapper-product .tab-content .row .product-item:hover img {
         transform: scale(1.1);
         -webkit-transform: scale(1.1);
@@ -114,3 +113,16 @@ section.product-content .wrapper-product {
             font-size: 1.4rem;
             text-decoration: underline;
             font-weight: 700; }
+
+@media (min-width: 768px) {
+  .product-item {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 20% !important;
+    flex: 0 0 20% !important;
+    max-width: 20%; } }
+
+.w-20 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 20% !important;
+  flex: 0 0 20% !important;
+  max-width: 20%; }

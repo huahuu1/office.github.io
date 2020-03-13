@@ -4,7 +4,7 @@ $(document).ready(function(){
         loop:true,
         responsiveClass:true,
         dots:false,
-        autoplay:true,
+        autoplay:false,
         lazyLoad: true,
         nav:true,
         navText: ["<i class='fa fa-chevron-left prev-next-button'></i>","<i class='fa fa-chevron-right prev-next-button'></i>"],

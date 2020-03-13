@@ -1,13 +1,5 @@
 .wrapper-nav {
-    // min-height: 100vh;
-    // overflow: hidden;
     .banner {
-        // position: absolute;
-        // top: 0;
-        // z-index: 1;
-        // height: 75rem;
-        // height: 60rem;
-        // margin-bottom: 2rem;
         .owl-loading {
             opacity: 1;
         }
@@ -19,6 +11,116 @@
                             background-position: 40% 0%;
                             background-size: cover !important;
                             background-repeat: no-repeat !important;
+                        }
+                        #text-box-1 {
+                            position: absolute;
+                            left: 11%;
+                            top: 32%;
+                            margin-left: auto;
+                            width: 32%;
+                            .text {
+                                text-align: left;
+                                .text-inner {
+                                    h3 {
+                                        font-size: 3.2rem;
+                                        font-family: 'Roboto Slab', sans-serif;
+                                        color: #1c1c1c;
+                                        font-weight: 400;
+                                    }
+                                    h2 {
+                                        font-size: 5.568rem;
+                                        font-family: 'Roboto Slab', sans-serif;
+                                        color: #ff0000;
+                                        font-weight: 700;
+                                    }
+                                    p {
+                                        font-size: 1.6rem;
+                                        color: #000;
+                                        font-weight: 400;
+                                    }
+                                    a {
+                                        display: inline-block;
+                                        padding: .5rem 1.8rem .9rem 1.8rem;
+                                        margin: 1rem 0;
+                                        border: 2px solid #000;
+                                        text-decoration: none;
+                                        transition: all .2s ease;
+                                        -webkit-transition: all .2s ease;
+                                        -moz-transition: all .2s ease;
+                                        -ms-transition: all .2s ease;
+                                        -o-transition: all .2s ease;
+                                        &:hover {
+                                            background-color: #fff;
+                                            border-color: #fff;
+                                            span {
+                                                color: #666;
+                                            }
+                                        }
+                                        span {
+                                            line-height: 1.6;
+                                            font-size: 1.6rem;
+                                            color: #000;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        #text-box-2 {
+                            position: absolute;
+                            // top: 40%;
+                            // left: 32%;
+                            left: 0;
+                            right: 0;
+                            top: 40%;
+                            margin: 0 auto;
+                            .text {
+                                text-align: center;
+                                .text-inner {
+                                    h3 {
+                                        font-size: 3.2rem;
+                                        font-family: 'Roboto Slab', sans-serif;
+                                        color: #1c1c1c;
+                                        font-weight: 400;
+                                    }
+                                    h2 {
+                                        font-size: 5.568rem;
+                                        font-family: 'Roboto Slab', sans-serif;
+                                        color: #ff0000;
+                                        font-weight: 700;
+                                    }
+                                    p {
+                                        font-size: 1.6rem;
+                                        color: #000;
+                                        font-weight: 400;
+                                    }
+                                    a {
+                                        display: inline-block;
+                                        padding: .5rem 1.8rem .9rem 1.8rem;
+                                        margin: 1rem 0;
+                                        border: 2px solid #000;
+                                        text-decoration: none;
+                                        transition: all .2s ease;
+                                        -webkit-transition: all .2s ease;
+                                        -moz-transition: all .2s ease;
+                                        -ms-transition: all .2s ease;
+                                        -o-transition: all .2s ease;
+                                        &:hover {
+                                            background-color: #fff;
+                                            border-color: #fff;
+                                            span {
+                                                color: #666;
+                                            }
+                                        }
+                                        span {
+                                            line-height: 1.6;
+                                            font-size: 1.6rem;
+                                            color: #000;
+                                            font-weight: 500;
+                                        }
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -193,3 +295,45 @@
 //     }
 // }
 
+
+#text-box-2 {
+    width: 90%;
+  }
+#text-box-1 .text ,
+#text-box-2 .text {
+    font-size: 80%;
+  }
+
+
+@media (min-width:550px) {
+
+#text-box-2 {
+    width: 70%;
+}
+
+#text-box-2 .text {
+    font-size: 100%;
+}
+
+}
+
+
+@media (min-width:850px) {
+
+#text-box-2 {
+    width: 50%;
+}
+
+}
+
+@media (min-width: 850px) {
+#text-box-1 {
+    width: 31%;
+    }
+}
+
+@media (min-width: 550px) {
+    #text-box-1 {
+        width: 35%;
+    }
+}
