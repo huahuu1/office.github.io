@@ -499,10 +499,11 @@ section.product-content .wrapper-product .tab-content {
 
 .container .productDetail {
   padding: 4rem 0; }
-  .container .productDetail .nav-item::selection {
-    border-top: 2px solid #fa3264; }
+  .container .productDetail .nav-link {
+    border: 0.1rem solid #e1e1ff;
+    border-bottom: none; }
   .container .productDetail .tab-content {
-    border: 0.5px solid rgba(100, 100, 100, 0.25);
+    border: 0.1rem solid rgba(100, 100, 100, 0.25);
     border-top: none; }
     .container .productDetail .tab-content .description, .container .productDetail .tab-content .evaluation {
       padding: 2.5rem 5rem; }
@@ -929,6 +930,52 @@ label.star:before {
       color: white;
       font-weight: 500;
       border: none; }
+
+.accountManagement {
+  width: 60%;
+  margin: 0 auto;
+  padding: 4rem 0; }
+  .accountManagement .nav-item {
+    width: 50%; }
+  .accountManagement .nav-link {
+    border: 0.1rem solid #e1e1ff;
+    border-bottom: none;
+    text-align: center;
+    font-weight: bold; }
+  .accountManagement .frmAccountLogIn, .accountManagement .frmAccountSignUp {
+    color: #335533;
+    font-size: 1.5rem;
+    padding: 2.5rem 2.5rem;
+    border: 0.1rem solid #e1e1ff;
+    border-top: none; }
+    .accountManagement .frmAccountLogIn label, .accountManagement .frmAccountSignUp label {
+      font-weight: 500; }
+    .accountManagement .frmAccountLogIn input, .accountManagement .frmAccountSignUp input {
+      font-size: 1.5rem;
+      height: 3.5rem;
+      margin-bottom: 1.5rem; }
+    .accountManagement .frmAccountLogIn .userName, .accountManagement .frmAccountLogIn .lastName, .accountManagement .frmAccountSignUp .userName, .accountManagement .frmAccountSignUp .lastName {
+      padding: 0 1.5rem 0 0; }
+    .accountManagement .frmAccountLogIn .password, .accountManagement .frmAccountLogIn .firstName, .accountManagement .frmAccountSignUp .password, .accountManagement .frmAccountSignUp .firstName {
+      padding: 0 0 0 1.5rem; }
+    .accountManagement .frmAccountLogIn .logIn, .accountManagement .frmAccountSignUp .logIn {
+      padding: 1.5rem 0; }
+      .accountManagement .frmAccountLogIn .logIn p, .accountManagement .frmAccountSignUp .logIn p {
+        margin: 0.4rem 0 0 0.5rem; }
+    .accountManagement .frmAccountLogIn .btnLogIn, .accountManagement .frmAccountLogIn .btnSignUp, .accountManagement .frmAccountSignUp .btnLogIn, .accountManagement .frmAccountSignUp .btnSignUp {
+      width: 10rem;
+      font-weight: 500;
+      background-color: #FF0000;
+      border: none;
+      color: white; }
+    .accountManagement .frmAccountLogIn .btnSignUp, .accountManagement .frmAccountSignUp .btnSignUp {
+      margin-top: 1.5rem; }
+    .accountManagement .frmAccountLogIn .checkRememberPassword, .accountManagement .frmAccountSignUp .checkRememberPassword {
+      margin-left: 2.5rem; }
+
+@media screen and (max-width: 600px) {
+  .accountManagement {
+    width: 100%; } }
 
 .menu-nav {
   z-index: 999;

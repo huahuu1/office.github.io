@@ -1,0 +1,61 @@
+.accountManagement {
+    width: 60%;
+    margin: 0 auto;
+    padding: 4rem 0;
+    .nav-item {
+        width: 50%;
+
+    }
+    .nav-link {
+        border: 0.1rem solid rgb(225, 225, 255);
+        border-bottom: none;
+        text-align: center;
+        font-weight: bold
+    }
+    .frmAccountLogIn, .frmAccountSignUp {
+        color: #335533;
+        font-size: 1.5rem;
+        padding: 2.5rem 2.5rem;
+        border: 0.1rem solid rgb(225, 225, 255);
+        border-top: none;
+        label {
+            font-weight: 500
+        }
+        input {
+            font-size: 1.5rem;
+            height: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .userName, .lastName {
+            padding: 0 1.5rem 0 0
+        }
+        .password, .firstName {
+            padding: 0 0 0 1.5rem
+        }
+        .logIn {
+            padding: 1.5rem 0;
+            p {
+                margin: 0.4rem 0 0 0.5rem
+            }
+        }
+        .btnLogIn, .btnSignUp {
+            width: 10rem;
+            font-weight: 500;
+            background-color: #FF0000;
+            border: none;
+            color: white
+        }
+        .btnSignUp {
+            margin-top: 1.5rem
+        }
+        .checkRememberPassword {
+            margin-left: 2.5rem
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .accountManagement {
+        width: 100%;
+    }
+}

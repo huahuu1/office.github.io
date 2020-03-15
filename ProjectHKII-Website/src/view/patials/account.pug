@@ -1,0 +1,47 @@
+.container
+    .accountManagement
+        ul.nav.nav-tabs
+            li.nav-item
+                a(href="#frmAccountLogIn" data-toggle="tab").nav-link.active LOG IN
+            li.nav-item
+                a(href="#frmAccountSignUp" data-toggle="tab").nav-link SIGN UP
+        .tab-content
+            .tab-pane.active#frmAccountLogIn
+                form(action="" method="").frmAccountLogIn
+                    .form-group
+                        label(for="") User Name
+                        input(type="text" id="" name="" maxlength="10").txtUserName.form-control
+                        label(for="") Password
+                        input(type="password" id="" name="").txtPassword.form-control
+                        .row.logIn
+                            input(type="submit" id="" name="" value="Log In").btnLogIn
+                            input(type="checkbox" id="" name="" value="RememberPassword").checkRememberPassword
+                            p Remember Password
+            .tab-pane#frmAccountSignUp
+                form(action="" method="").frmAccountSignUp
+                    .row
+                        .form-group.col-6.col-sm-6.userName
+                            label(for="") User Name *
+                            input(type="text" id="" name="" maxlength="10").txtUserName.form-control
+                        .form-group.col-6.col-sm-6.password
+                            label(for="") Password *
+                            input(type="password" id="" name="").txtPassword.form-control
+                    .row
+                        .form-group.col-6.col-sm-6.lastName
+                            label(for="") Last Name *
+                            input(type="text" id="" name="" maxlength="10").txtLastName.form-control
+                        .form-group.col-6.col-sm-6.firstName
+                            label(for="") First Name *
+                            input(type="text" id="" name="" maxlength="10").txtFirstName.form-control
+                    .form-group
+                        label(for="") Company
+                        input(type="text" id="" name="" maxlength="10").form-control
+                        label(for="") Address *
+                        input(type="text" id="" name="" maxlength="10").form-control
+                        label(for="") Zip Code
+                        input(type="text" id="" name="" maxlength="10").form-control
+                        label(for="") Tel *
+                        input(type="text" id="" name="" maxlength="10").form-control
+                        label(for="") Email *
+                        input(type="text" id="" name="" maxlength="10").form-control
+                        input(type="submit" id="" name="" value="Sign Up").btnSignUp
