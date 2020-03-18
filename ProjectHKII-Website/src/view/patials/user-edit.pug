@@ -1,0 +1,27 @@
+.container
+    .userEdit
+        ul.nav.nav-tabs
+            li.nav-item
+                a(href="#frmEditA" data-toggle="tab").nav-link.active INFORMATION
+            li.nav-item
+                a(href="#frmEditB" data-toggle="tab").nav-link PASSWORD
+        form(action="" method="").frmEdit
+            .tab-content
+                .tab-pane.active#frmEditA
+                    .form-group
+                        label(for="") User Name
+                        input(type="text" id="" name="" maxlength="10").txtUserName.form-control
+                        label(for="") Email
+                        input(type="email" id="" name="").txtEmail.form-control
+                        label(for="") Tel
+                        input(type="text" id="" name="").txtTel.form-control
+                .tab-pane#frmEditB
+                    .form-group
+                        label(for="") Old Password
+                        input(type="password" id="" name="" maxlength="10").txtOldPassword.form-control
+                        label(for="") New Password
+                        input(type="password" id="" name="").txtNewPassword.form-control
+                        label(for="") Confirm Password
+                        input(type="password" id="" name="").txtConfirmPassword.form-control
+                .btnEdit
+                    input(type="submit" id="" name="" value="Edit").btn.btn-danger
